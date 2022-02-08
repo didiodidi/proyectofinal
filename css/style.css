@@ -671,14 +671,9 @@ nav .nav-li li a:hover {
     line-height: 23px;
   }
 
-  .trabajos-container__obra {
-    display: flex;
-    flex-direction: column;
-  }
-  .trabajos-container__obra .productos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .trabajos-container__obra .trabajosObra input[type=button] {
+    position: relative;
+    top: -2rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 2560px) {

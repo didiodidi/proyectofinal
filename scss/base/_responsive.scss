@@ -122,12 +122,11 @@
             }
         }
     .trabajos-container__obra{
-            display: flex;
-            flex-direction: column;
-            .productos {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .trabajosObra{
+            input[type="button"]{
+                position: relative;
+                top: -2rem;
+            }
         }
     }
     
@@ -137,6 +136,5 @@
     .gridBio-mobile{
         display: none;
     } 
-
     
 }
