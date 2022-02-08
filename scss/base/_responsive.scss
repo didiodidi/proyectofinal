@@ -124,9 +124,10 @@
     .trabajos-container__obra{
             display: flex;
             flex-direction: column;
-        .trabajosObra{
+            .productos {
             display: flex;
             flex-direction: column;
+            gap: 20px;
         }
     }
     
