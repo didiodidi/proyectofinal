@@ -1,0 +1,67 @@
+.contacto{
+    background-color:#cdedf8;
+    cursor: default;
+    .contact-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 100px 100px 100px 200px 50px 100px;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+            h2{
+                padding: 6%;
+            }
+            div{
+                textarea{
+                    text-align: center;
+                    resize: none;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: .5px solid #aab2eb ;
+                        &:focus{
+                            background: linear-gradient(to bottom, transparent 5%,#EAFFFD);
+                        }
+                }
+                input {
+                    padding-top: 10px;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: .5px solid #aab2eb;
+                    font-size: 16px;
+                        &:focus {
+                            background: linear-gradient(to bottom, transparent 5%,#EAFFFD);
+                            outline: none;
+                            border-bottom:.5px solid #e6e8fa  ;
+                        }
+                }
+            }
+            h2{
+                font-size: 35px;
+                grid-area: 1 /2;
+            }
+            .form-field1 {
+                grid-area: 2 / 2;
+            }
+            .form-field2 {
+                grid-area: 3 / 2;
+            }
+            .form-field3 {
+                grid-area: 4 / 2;
+            }
+            .form-field4 {
+                grid-area: 5 / 2;
+            }
+            .form-field5 {
+                grid-area: 6 / 2;
+                resize:none;
+            }
+            .form-field6 {
+                grid-area: 7 / 2;
+                a{
+                    @extend %volver;
+                }
+            }
+    }
+}

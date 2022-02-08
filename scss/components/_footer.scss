@@ -1,0 +1,12 @@
+@import '../base/colores';
+.footer {
+    display: block;
+    text-align: center;
+    background-color: $footer;
+    color: $footertxt;
+    height: 100%;
+    p {
+        padding: 15px;
+        cursor:default;
+        }
+    }

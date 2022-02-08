@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:wght@300;500&family=Oxygen+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-weight: 300;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.titulo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-container .h1-h2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+nav .nav-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bienvenidos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.bio .bio-grid .gridGaviota2, .bio .bio-grid .gridGaviota1 {
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.redes .redes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.obras a, .contacto .contact-form .form-field6 a, .trabajos a, .bio a {
+  width: 100%;
+  height: 5rem;
+  padding: 10px;
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.titulo-container {
+  background-color: #C9F0FF;
+  width: 100%;
+  height: 100px;
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  cursor: default;
+}
+.titulo-container .h1-h2 {
+  width: 100%;
+}
+.titulo-container .h1-h2 .titulo {
+  position: relative;
+  padding-right: 20px;
+}
+.titulo-container .h1-h2 .artista {
+  position: relative;
+  padding-left: 20px;
+}
+
+nav .nav-li {
+  background-color: #DAF8FE;
+  padding: 10px;
+  object-fit: cover;
+  border-bottom: 1px solid #525881;
+}
+nav .nav-li li {
+  padding: 5px;
+  margin: 5px;
+  list-style: none;
+  cursor: pointer;
+  color: #525881;
+}
+nav .nav-li li a {
+  color: #525881;
+  text-decoration: none;
+}
+nav .nav-li li a:hover {
+  color: #858dc0;
+  text-shadow: 2px 2px 2px white;
+}
+
+.bienvenidos {
+  background-image: url("/src/assets/img/fondo-home/fondo-home.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  font-size: 50px;
+  text-shadow: 2px 2px 8px #999;
+  color: #DCE8E7;
+  font-weight: 500;
+  cursor: default;
+}
+.bienvenidos h2 {
+  transition: all 1.7s;
+}
+.bienvenidos h2:hover {
+  transform: scale(1.4);
+}
+
+.bio {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px 40px 40px;
+  background-color: #ECFBFA;
+  cursor: default;
+}
+.bio h2 {
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  padding: 6%;
+}
+.bio a {
+  transform: translate(0, 2rem);
+}
+.bio .bio-grid {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px;
+  grid-gap: 5px;
+}
+.bio .bio-grid .gridGaviota1 {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #aab2eb;
+  color: #ECFBFA;
+  box-shadow: 10px 10px 1px #b8bde4;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 20px;
+}
+.bio .bio-grid .gridGaviota1 p {
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 26px;
+}
+.bio .bio-grid .gridGaviota1 p::selection {
+  color: #cdedf8;
+  background-color: #525881;
+}
+.bio .bio-grid .gridGaviota1 h4 {
+  font-size: 20px;
+}
+.bio .bio-grid .gridGaviota2 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 10px;
+}
+.bio .bio-grid .gridGaviota2 img {
+  width: 100%;
+  height: 105%;
+  transform: scale(0.6);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 20%;
+  box-shadow: 15px 15px 50px #b8bde4;
+}
+
+.trabajos {
+  background-color: #EAFFFD;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  cursor: default;
+}
+.trabajos .trabajos-volver {
+  transform: translateY(30px);
+}
+.trabajos h2 {
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  padding: 6%;
+}
+.trabajos .trabajos-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+}
+.trabajos .trabajos-container a {
+  transform: translateY(50px);
+}
+.trabajos .trabajos-container .trabajosIndex {
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.trabajos .trabajos-container img {
+  max-width: 250px;
+  max-height: 250px;
+  transform: scale(1.1);
+  box-shadow: 20px 20px 20px #aab2eb;
+  border-radius: 20px;
+  border-top-right-radius: 50px;
+}
+.trabajos .trabajos-container .gridTrabajo1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.trabajos .trabajos-container .gridTrabajo2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.trabajos .trabajos-container .gridTrabajo3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.trabajos .trabajos-container .gridTrabajo4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.trabajos .trabajos-container .gridTrabajo5 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.trabajos .trabajos-container .gridTrabajo5index {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+
+.contacto {
+  background-color: #cdedf8;
+  cursor: default;
+}
+.contacto .contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 100px 100px 100px 200px 50px 100px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.contacto .contact-form h2 {
+  padding: 6%;
+}
+.contacto .contact-form div textarea {
+  text-align: center;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.5px solid #aab2eb;
+}
+.contacto .contact-form div textarea:focus {
+  background: linear-gradient(to bottom, transparent 5%, #EAFFFD);
+}
+.contacto .contact-form div input {
+  padding-top: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.5px solid #aab2eb;
+  font-size: 16px;
+}
+.contacto .contact-form div input:focus {
+  background: linear-gradient(to bottom, transparent 5%, #EAFFFD);
+  outline: none;
+  border-bottom: 0.5px solid #e6e8fa;
+}
+.contacto .contact-form h2 {
+  font-size: 35px;
+  grid-area: 1/2;
+}
+.contacto .contact-form .form-field1 {
+  grid-area: 2/2;
+}
+.contacto .contact-form .form-field2 {
+  grid-area: 3/2;
+}
+.contacto .contact-form .form-field3 {
+  grid-area: 4/2;
+}
+.contacto .contact-form .form-field4 {
+  grid-area: 5/2;
+}
+.contacto .contact-form .form-field5 {
+  grid-area: 6/2;
+  resize: none;
+}
+.contacto .contact-form .form-field6 {
+  grid-area: 7/2;
+}
+.redes {
+  background-color: #bbeafb;
+  text-align: center;
+  width: 100%;
+  height: 220px;
+  cursor: default;
+}
+.redes .redes-container p {
+  padding: 15px;
+  cursor: default;
+}
+.redes h2 {
+  font-size: 35px;
+  padding: 20px;
+}
+.redes a {
+  text-decoration: none;
+  color: #000;
+}
+.redes li {
+  padding: 10px;
+  margin: 11px;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  background-color: #2D3047;
+  color: #aab2eb;
+  height: 100%;
+}
+.footer p {
+  padding: 15px;
+  cursor: default;
+}
+
+.obras {
+  width: 100%;
+  height: 100%;
+  background-color: #EAFFFD;
+}
+.obras h2 {
+  width: 100%;
+  height: 10rem;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.obras .trabajos-container__escultura {
+  outline: none;
+  display: subgrid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+}
+.obras .trabajos-container__escultura .gridEscultura1 {
+  grid-column: 1/1;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__escultura .gridEscultura2 {
+  grid-column: 1/2;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__escultura .trabajosEscultura {
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.obras .trabajos-container__escultura .trabajosEscultura img {
+  max-width: 600px;
+}
+.obras .trabajos-container__escultura .trabajosEscultura h3 {
+  padding-top: 25px;
+}
+.obras .trabajos-container__escultura .trabajosEscultura h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.obras .trabajos-container__escultura .trabajosEscultura p {
+  padding-bottom: 30px;
+}
+.obras .trabajos-container__obra {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: stretch;
+  grid-gap: 60px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30rem 30rem 30rem;
+}
+.obras .trabajos-container__obra .trabajosObra {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  /* Uso de mixin en el input */
+}
+.obras .trabajos-container__obra .trabajosObra img {
+  margin: 0 auto;
+  max-width: 250px;
+  max-height: 250px;
+  padding: 20px;
+  transform: scale(1);
+}
+.obras .trabajos-container__obra .trabajosObra h3 {
+  width: 100%;
+  padding-top: 25px;
+}
+.obras .trabajos-container__obra .trabajosObra h4 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.obras .trabajos-container__obra .trabajosObra p {
+  /* width: 100%; */
+  padding-bottom: 30px;
+  margin: 10px;
+}
+.obras .trabajos-container__obra .trabajosObra input {
+  padding: 10px;
+  border-radius: 20px 10px;
+  height: 3rem;
+  background-color: #2D3047;
+  /* padding: 10px; */
+  color: #aab2eb;
+  border: none;
+  /* border-radius: 20px 10px; */
+  cursor: grab;
+}
+.obras .trabajos-container__obra .trabajosObra input:hover {
+  background-color: #5a5f85;
+}
+.obras .trabajos-container__obra .trabajosObra input:active {
+  background-color: #465af1;
+  box-shadow: -2px 2px 1px #2D3047;
+}
+.obras .trabajos-container__obra .gridObra1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridObra2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridobra3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridObra4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridObra5 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridObra6 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.obras .trabajos-container__obra .gridObra7 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra7joyeria {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra7talla {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra8 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra8talla {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra9 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra10 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra11 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  justify-self: center;
+  text-align: center;
+}
+.obras .trabajos-container__obra .gridObra11textil {
+  grid-column: 1/3;
+  grid-row: 6/7;
+  justify-self: center;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  header .titulo-container .h1-h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .bienvenidos {
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  section .bienvenidos h2 {
+    letter-spacing: 3px;
+    font-weight: 300;
+    transform: scale(1.5);
+    transition: all 1.7s;
+  }
+  section .bienvenidos h2:hover {
+    transform: scale(2);
+  }
+
+  .bio .bio-grid {
+    display: flex;
+  }
+  .bio .bio-grid .gridGaviota1 {
+    display: none;
+    background-color: none;
+  }
+  .bio .bio-grid .gridGaviota2 {
+    display: none;
+  }
+  .bio .bio-grid .gridBio-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .trabajos h2 {
+    margin-bottom: 40px;
+  }
+  .trabajos .trabajos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacto .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto .contact-form input {
+    margin: 20px;
+  }
+  .contacto .contact-form .trabajos-volver {
+    transform: translateY(-10px);
+  }
+
+  .obras .trabajos-container__obra {
+    display: flex;
+    flex-direction: column;
+  }
+  .obras .trabajos-container__obra .trabajosObra {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 468px) and (max-width: 768px) {
+  .titulo-container .h1-h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bio .bio-grid .gridGaviota1 {
+    display: none;
+  }
+  .bio .bio-grid .gridBio-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+    line-height: 23px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+  .gridBio-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

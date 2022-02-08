@@ -1,0 +1,6 @@
+@mixin botones($padding, $radius ,$height){
+    padding: $padding;
+    border-radius: $radius;
+    height: $height;
+}
+

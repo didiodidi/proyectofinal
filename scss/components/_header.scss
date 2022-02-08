@@ -1,0 +1,51 @@
+
+    .titulo-container {
+    @extend %flex-container;
+    background-color: #C9F0FF;
+    width: 100%;
+    height: 100px;
+    color: #000;
+    font-family: "Montserrat";
+    font-weight: 500;
+    cursor: default;
+        .h1-h2{
+            @extend %flex-h1-h2;
+            width: 100%;
+                .titulo{
+                    position: relative;
+                    padding-right: 20px;
+                    }
+                .artista{
+                    position: relative;
+                    padding-left: 20px;
+                }
+        }
+    }
+
+    nav{
+        .nav-li{
+            background-color: #DAF8FE;
+            padding: 10px;
+            object-fit: cover;
+            @extend %flex-nav-li;
+            border-bottom: 1px solid #525881;
+            li{
+                padding: 5px;
+                margin: 5px;
+                list-style: none;
+                cursor: pointer;
+                color: #525881;
+                    a{  
+                        color: #525881;
+                        text-decoration: none;
+                        &:hover{
+                            color: #858dc0;
+                            text-shadow: 2px 2px 2px white;
+                        }
+                    }
+                }
+            }
+    }
+
+
+

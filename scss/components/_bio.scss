@@ -1,0 +1,70 @@
+.bio {
+    @extend %flex-bio;
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px 40px 40px;
+    background-color: #ECFBFA;
+    cursor: default;
+    
+        h2 {
+            font-size: 35px;
+            display: block;
+            text-align: center;
+            padding: 6%;
+        }
+        a{  
+            @extend %volver;
+            transform: translate(0,2rem);
+        }
+        .bio-grid{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 600px;
+            grid-gap: 5px;
+            .gridGaviota1 {
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                @extend %flex-gridGaviota;
+                background-color: #aab2eb;
+                color: #ECFBFA;
+                box-shadow: 10px 10px 1px #b8bde4;
+                border-top-left-radius: 60px;
+                border-bottom-right-radius: 100px;
+                border-bottom-left-radius: 20px;
+                    p{  box-sizing: border-box;
+                        padding: 20px;
+                        line-height: 26px;
+                        &::selection{
+                            color: #cdedf8;
+                            background-color: #525881;
+                        }
+                    }
+                    h4{
+                        font-size: 20px;
+                    }
+                }
+                .gridGaviota2 {
+                    width: 100%;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    @extend %flex-gridGaviota;
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                        height: 105%;
+                        transform: scale(.6);
+                        border-top-right-radius: 50%;
+                        border-bottom-right-radius: 100%;
+                        border-bottom-left-radius: 20%;
+                        box-shadow: 15px 15px 50px #b8bde4;
+                    }
+                }
+        }
+    }

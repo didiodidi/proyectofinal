@@ -1,0 +1,26 @@
+.redes {
+    background-color: #bbeafb;
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    cursor: default;
+    .redes-container{
+        @extend %flex-redes-container;
+        p {
+            padding: 15px;
+            cursor: default;
+            }
+    }
+    h2{
+        font-size: 35px;
+        padding: 20px;
+        }
+    a{
+    text-decoration: none;
+    color: #000;
+    }
+    li {
+        padding: 10px;
+        margin: 11px;
+        }
+}

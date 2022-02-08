@@ -1,0 +1,19 @@
+.bienvenidos {
+    background-image: url('/src/assets/img/fondo-home/fondo-home.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    @extend %flex-bienvenidos;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px #999;
+    color: #DCE8E7;
+    font-weight: 500 ;
+    cursor:default;
+        h2 {
+            transition: all 1.7s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+}
