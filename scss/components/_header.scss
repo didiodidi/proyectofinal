@@ -1,4 +1,7 @@
 
+    header{
+        position: sticky;
+    }
     .titulo-container {
     @extend %flex-container;
     background-color: #C9F0FF;

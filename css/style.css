@@ -64,6 +64,10 @@ nav .nav-li {
   border-bottom: none;
 }
 
+header {
+  position: sticky;
+}
+
 .titulo-container {
   background-color: #C9F0FF;
   width: 100%;
