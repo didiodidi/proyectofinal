@@ -683,14 +683,36 @@ nav .nav-li li a:hover {
     display: none;
   }
 }
+header .titulo-container {
+  display: flex;
+  justify-content: flex-end;
+}
 header .titulo-container .box-1 {
-  position: relative;
-  right: 25rem;
   width: 2rem;
   height: 2rem;
   background-color: royalblue;
   border-radius: 90px 90px 90px 90px;
   transform: skew(10deg, 30deg);
+  animation-name: box-1;
+  animation-duration: 2s all;
+  animation-iteration-count: infinite;
+}
+@keyframes box-1 {
+  0% {
+    background-color: #2D3047;
+  }
+  25% {
+    background-color: #aab2eb;
+  }
+  50% {
+    background-color: #aab2eb;
+  }
+  75% {
+    background-color: #cdedf8;
+  }
+  100% {
+    background-color: #2D3047;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

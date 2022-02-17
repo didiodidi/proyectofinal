@@ -1,15 +1,15 @@
 header{
     .titulo-container{
+        display: flex;
+        justify-content: flex-end;
         .box-1{
-            position: relative;
-            right: 25rem;
             width: 2rem;
             height: 2rem;
             background-color: royalblue;
             border-radius: 90px 90px 90px 90px;
             transform: skew(10deg,30deg);
             animation-name: box-1;
-            animation-duration: 2s;
+            animation-duration: 2s all;
             animation-iteration-count: infinite;
         }
         @keyframes box-1{
