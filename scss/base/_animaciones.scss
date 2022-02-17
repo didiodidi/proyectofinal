@@ -2,30 +2,32 @@ header{
     .titulo-container{
         display: flex;
         justify-content: flex-end;
+        align-content: center;
         .box-1{
             position: relative;
             right: 24rem;
+            top: 0.3rem;
             width: 2rem;
-            height: 2rem;
+            height: .3rem;
             background-color: royalblue;
             border-radius: 90px 90px 90px 90px;
-            transform: skew(10deg,30deg);
+            /* transform: skew(10deg,30deg); */
             animation-name: animacion;
-            animation-duration: 2s all;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
         }
         @keyframes animacion{
-            /* 0%{background-color: $footer;}
+            0%{background-color: $footer;}
             25%{background-color: $footertxt;}
             50%{background-color: $bio;}
             75%{background-color: $contacto;}
-            100%{background-color: $footer;} */
-            0%{background-color: slateblue;}
-            25%{background-color: steelblue;}
-            50%{background-color: thistle;}
-            75%{background-color: violet;}
-            100%{background-color: whitesmoke;}
+            100%{background-color: $footer;} 
+            0%{transform: translate(-15px);}
+            25%{transform: translate(15px);}
+            50%{transform: translate(-15px);}
+            75%{transform: translate(15px);}
+            100%{transform: translate(-15px);}
         }
     }
 }
