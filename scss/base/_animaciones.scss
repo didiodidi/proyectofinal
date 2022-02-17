@@ -8,6 +8,16 @@ header{
             background-color: royalblue;
             border-radius: 90px 90px 90px 90px;
             transform: skew(10deg,30deg);
+            animation-name: box-1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box-1{
+            0%{background-color: $footer;}
+            25%{background-color: $footertxt;}
+            50%{background-color: $bio;}
+            75%{background-color: $contacto;}
+            100%{background-color: $footer;}
         }
     }
 }
