@@ -722,7 +722,7 @@ nav .nav-li li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-.bienvenidos img .tracking-in-expand {
+.bienvenidos .tracking-in-expand {
   animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @keyframes tracking-in-contract {
