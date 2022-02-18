@@ -718,24 +718,44 @@ nav .nav-li li a:hover {
   }
 }
 .bienvenidos {
+  /* animacion 1 */
+  /* .tracking-in-expand{
+      animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  @keyframes tracking-in-contract{
+      0% {
+          letter-spacing: 1em;
+          transform: translateZ(400px) translateY(-300px);
+          opacity: 0;
+          }
+          40% {
+          opacity: 0.6;
+          }
+          100% {
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+          }
+  } */
+  /* animacion 2 */
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* Animacion bola */
 }
 .bienvenidos .tracking-in-expand {
-  animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  letter-spacing: 1rem;
+  animation: focus-in-contract-bck 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@keyframes tracking-in-contract {
+@keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
-    transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(300px);
+    filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
-    transform: translateZ(0) translateY(0);
+    transform: translateZ(12px);
+    filter: blur(0);
     opacity: 1;
   }
 }
@@ -762,6 +782,7 @@ nav .nav-li li a:hover {
   }
 }
 
+/* Contacto cambio de color */
 /* .contacto{
     animation: color-change-3x 10s linear infinite alternate both;
 }

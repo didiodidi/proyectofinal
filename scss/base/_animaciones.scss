@@ -1,5 +1,7 @@
 .bienvenidos{
-    .tracking-in-expand{
+
+        /* animacion 1 */
+    /* .tracking-in-expand{
         animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
     @keyframes tracking-in-contract{
@@ -15,10 +17,34 @@
             transform: translateZ(0) translateY(0);
             opacity: 1;
             }
+    } */
+
+
+    /* animacion 2 */
+    .tracking-in-expand{
+        letter-spacing: 1rem;
+        animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
+    @keyframes focus-in-contract-bck {
+        0% {
+            letter-spacing: 1em;
+            transform: translateZ(300px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateZ(12px);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
+
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    /* Animacion bola */
     .box-1{
         position: relative;
         top: 5rem;
@@ -43,10 +69,7 @@
     }
 }
 
-
-
-
-
+/* Contacto cambio de color */
 /* .contacto{
     animation: color-change-3x 10s linear infinite alternate both;
 }
